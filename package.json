@@ -2,9 +2,12 @@
   "name": "frontendmentor-single-price-grid-component",
   "version": "1.0.0",
   "description": "Frontend Mentor Single Price Grid Component",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html --open",
+    "clean-cache": "rm -rf .cache .parcel-cache",
+    "clean": "rm -rf .cache .parcel-cache dist",
+    "build": "npm run clean && parcel build index.html --public-url ./ && npm run clean-cache"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/santu369/frontendmentor-single-price-grid-component#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "parcel": "^2.0.0-beta.2",
     "sass": "^1.32.12"
   },
