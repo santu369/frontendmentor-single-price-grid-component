@@ -2,7 +2,6 @@
   "name": "frontendmentor-single-price-grid-component",
   "version": "1.0.0",
   "description": "Frontend Mentor Single Price Grid Component",
-  "main": "index.html",
   "scripts": {
     "dev": "parcel index.html --open",
     "clean-cache": "rm -rf .cache .parcel-cache",
